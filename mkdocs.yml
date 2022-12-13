@@ -1,0 +1,33 @@
+# mkdocs.yml
+# Project information
+site_name: Serverless NLP
+site_author: Fahim Rustamy
+site_description: >-
+  A repository of serverless NLP projects
+# Repository
+repo_name: RustamyF/lambda-bert-huggingface
+repo_url: https://github.com/RustamyF/lambda-bert-huggingface
+
+theme:
+  name: "material"
+  features:
+    - content.code.annotate
+
+nav:
+  - index.md
+  - transformer.md
+  - question-ansering.md
+
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/frustamy
