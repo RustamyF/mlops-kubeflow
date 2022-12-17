@@ -1,12 +1,12 @@
 # mkdocs.yml
 # Project information
-site_name: Serverless NLP
+site_name: mlops kubeflow
 site_author: Fahim Rustamy
 site_description: >-
-  A repository of serverless NLP projects
+  A machine learning platform with Kubeflow
 # Repository
-repo_name: RustamyF/lambda-bert-huggingface
-repo_url: https://github.com/RustamyF/lambda-bert-huggingface
+repo_name: RustamyF/mlops-kubeflow
+repo_url: https://github.com/RustamyF/mlops-kubeflow
 
 theme:
   name: "material"
@@ -14,9 +14,9 @@ theme:
     - content.code.annotate
 
 nav:
-  - index.md
-  - transformer.md
-  - question-ansering.md
+  - kubeflow.md
+  - kubeflow-notebook.md
+  - kubeflow_pipeline.md
 
 
 

@@ -1,0 +1,19 @@
+name: Read from s3
+inputs:
+  - name: s3_uri
+    type: String
+outputs:
+  - name: output_path
+    type: String
+implementation:
+  container:
+    image: amazon/aws-cli
+    command:
+      - sh
+      - -ex
+      - -c
+      - |
+        mkdir -p "$(dirname "$1")"
+        aws s3 cp "$0" "$1"
+      - inputValue: s3_uri
+      - outputPath: output_path
