@@ -14,9 +14,9 @@ theme:
     - content.code.annotate
 
 nav:
-  - index.md
-  - notebook.md
-  - pipeline.md
+  - kubeflow.md
+  - kubeflow-notebook.md
+  - kubeflow_pipeline.md
 
 
 

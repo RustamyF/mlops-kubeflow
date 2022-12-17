@@ -28,3 +28,5 @@ docker push $ACCOUNT.dkr.ecr.$REGION.amazonaws.com/$REPOSITORY:$IMAGE_TAG
 ```
 
 Once we have an extended Jupiter image, we can always import it when initializing a new Jupiter server, as shown below.
+
+![ui](../docs/assets/notebook.png)
