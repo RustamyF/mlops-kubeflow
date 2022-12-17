@@ -1,3 +1,5 @@
+## What is Kubeflow?
+
 Kubeflow is an end-to-end ML platform for Kubernetes and has components for each stage of the ML lifecycle.
 Kubeflow is for data scientists in building and experimenting with ML pipelines and for ML engineers deploying
 ML systems to various environments for developing, testing, and production-level serving. Developing an ML
@@ -7,6 +9,8 @@ changes in model parameters to ensure the model produces the desired results. Ku
   Kubeflow that sit on the Kubernetes cluster that can be deployed to any public cloud provider or on-prem servers.
 
  ![ui](assets/kf-arch.png)
+
+## Kubeflow Installation
 
  Before anything else, we must ensure we have proper IAM access to create an EKS cluster.
  Follow this instruction to create an IAM user if you don't have any, and use that to set up your credentials.
