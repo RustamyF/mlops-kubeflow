@@ -1,0 +1,29 @@
+name: Write to s3
+inputs:
+  - name: s3_uri
+    type: String
+  - name: input_path
+    type: String
+  - name: s3_filename
+    type: String
+  - name: extra_cp_opts
+    type: String
+outputs:
+  - name: s3_uri
+    type: String
+implementation:
+  container:
+    image: amazon/aws-cli
+    command:
+      - sh
+      - -ex
+      - -c
+      - |
+        aws s3 cp "$0" "$1"/"$3" $4
+        mkdir -p "$(dirname "$2")"
+        echo "$1" > "$2"
+      - inputPath: input_path
+      - inputValue: s3_uri
+      - outputPath: s3_uri
+      - inputValue: s3_filename
+      - inputValue: extra_cp_opts

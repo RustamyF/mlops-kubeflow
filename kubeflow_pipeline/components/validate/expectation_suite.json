@@ -1,0 +1,28 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "dataset.warning",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "target"
+      }
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "alcohol",
+        "max_value": 20,
+        "min_value": 5
+      }
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "alcohol",
+        "max_value": 20,
+        "min_value": 5
+      }
+    }
+  ]
+}
